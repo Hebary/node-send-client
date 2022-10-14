@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env : {
-      backendURL : 'https://node-sendreact.herokuapp.com',
-      frontURL : 'https://nodesend-client-dusky.vercel.app'  
+      backendURL : 'https://node-send-reactjs.herokuapp.com',
+      frontURL : 'https://next-send.netlify.app/'  
   }
 }
 
