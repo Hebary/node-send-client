@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   env : {
       backendURL : 'https://node-send-reactjs.herokuapp.com',
-      frontURL : 'https://next-send.netlify.app/'  
+      frontURL : 'https://next-send.netlify.app'  
   }
 }
 
