@@ -3,30 +3,9 @@ import axiosClient from '../../config/axios';
 import React, {useState, useContext, useEffect } from 'react';
 import FileContext from '../../context/files/fileContext';
 import Alert from '../../components/Alert';
-// import appContext from '../../context/app/appContext';
-// import Alerta from '../../components/Alerta';
 
 
 
-export async function getServerSideProps({params}) {
-    const { link } = params;
-
-    return {
-        props: {
-            link:  link
-        }
-    }
-}
-
-export async function getServerSidePaths() {
-        const links = await axiosClient.get('/api/links');
-        return {
-            paths: links.data.links.map( link => ( {
-                params: { link : link.url }
-            })),
-            fallback: false
-        }
-}
 
 
 
@@ -143,3 +122,24 @@ export default ({link}) => {
         </Layout>
     )
 }
+ 
+export async function getServerSideProps({params}) {
+    const { link } = params;
+
+    return {
+        props: {
+            link:  link
+        }
+    }
+}
+
+export async function getServerSidePaths() {
+        const links = await axiosClient.get('/api/links');
+        return {
+            paths: links.data.links.map( link => ( {
+                params: { link : link.url }
+            })),
+            fallback: false
+        }
+}
+   

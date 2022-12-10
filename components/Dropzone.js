@@ -75,7 +75,7 @@ const Dropzone = () => {
                             isDragActive ? <p className="text-2xl text-center text-gray-600">Drop the file </p> :
                             <div className="text-center">
                                 <p className="text-2xl text-center text-gray-600">Drag a file and drop it here</p>
-                                <button className="bg-blue-700 w-full py-3 rounded-lg text-white my-10 hover:bg-blue-800 transition-colors duration-300" type="button">
+                                <button className="bg-blue-700 w-2/3 py-3 rounded-lg text-white my-10 hover:bg-blue-800 transition-colors duration-300" type="button">
                                     Select files to upload
                                 </button>
                             </div>
